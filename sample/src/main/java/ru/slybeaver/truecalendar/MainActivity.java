@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements SlyCalendarDialog
             public void onClick(View v) {
                 new SlyCalendarDialog()
                         .setSingle(false)
-                        .setFirstMonday(false)
+                        .setFirstMonday(true)
                         .setCallback(MainActivity.this)
                         .show(getSupportFragmentManager(), "TAG_SLYCALENDAR");
             }
